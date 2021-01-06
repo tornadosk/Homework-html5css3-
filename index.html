@@ -35,7 +35,8 @@
                     perferendis nemo debitis dolor.</p>
             </div>
             <div class="column">
-                <img class="about-product-img" src="img/video.png" width="430" height="245" alt="Product name">
+                <video class="about-product-img" src="img/video.mp4" width="430" height="245" controls autoplay muted
+                    preload="auto" loop></video>
             </div>
         </section>
         <section class="dignity">
@@ -230,10 +231,11 @@
             <div class="wrap-contacts">
                 <div class="contacts-form-part">
                     <form class="contacts-form" action="#">
-                        <input class="form-inputzone name" type="text" placeholder="Your name:"><br>
-                        <input class="form-inputzone name_email" type="email" placeholder="Your email:"><br>
-                        <textarea class="form-inputzone message" placeholder="Your message:" cols="30"
-                            rows="5"></textarea><br>
+                        <input class="form-inputzone name" type="text" placeholder="Your name:" required><br>
+                        <input class="form-inputzone name_email" type="email" placeholder="Your email:" required
+                            pattern="\S+@[a-z]+.[a-z]+"><br>
+                        <textarea class="form-inputzone message" placeholder="Your message:" cols="30" rows="5"
+                            required></textarea><br>
                         <button class="submit-form" type="submit">SEND</button>
                     </form>
                 </div>

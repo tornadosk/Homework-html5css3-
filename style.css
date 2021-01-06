@@ -335,21 +335,28 @@ figcaption {
     background-color: #FFFFFF;
     color: #445162;
     box-sizing: border-box;
+    border: none;
     border-radius: 5px;
-    border-color: none;
     padding-left: 12px;
     padding-top: 12px;
     padding-bottom: 7px;
+    padding-right: 12px;
 
 }
 
-::placeholder {
+.form-inputzone:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+.form-inputzone::placeholder {
     color: #445162;
 }
 
 .message {
     height: 173px;
     margin-bottom: 18px;
+    resize: none;
 }
 
 .name {
@@ -363,6 +370,7 @@ figcaption {
 .submit-form {
     box-sizing: border-box;
     border-radius: 5px;
+    border: none;
     background-color: #FFFFFF;
     font-family: Arial;
     font-style: normal;
@@ -375,6 +383,7 @@ figcaption {
     padding-bottom: 7px;
     padding-right: 50px;
     margin-left: 180px;
+    cursor: pointer;
 }
 
 .contacts-info {
